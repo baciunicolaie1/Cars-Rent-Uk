@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking — Cars Rent UK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">CARS RENT <span>UK</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-wrapper" style="padding: 40px 5%;">
+        <h1>Book Your Vehicle</h1>
+        <p>Fill out the form below and our UK support team will confirm your reservation instantly.</p>
+
+        <div class="booking-panel" style="max-width: 600px; margin-top: 20px; text-align: left;">
+            <form style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="field-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="field-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com">
+                </div>
+                <div class="field-box">
+                    <label>Pick-up Location</label>
+                    <input type="text" placeholder="Heathrow Airport, London">
+                </div>
+                <button type="button" onclick="alert('Thank you! Your reservation request has been sent successfully.')" class="search-action-btn" style="width: 100%; margin-top: 10px;">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

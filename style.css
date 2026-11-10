@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #050507;
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(5, 5, 7, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-secondary {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 18px;
+}
+
+.btn-primary-glow {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.6);
+}
+
+/* Hero Section */
+.hero-wrapper {
+    padding: 80px 5% 60px;
+    text-align: center;
+    background: radial-gradient(circle at center top, rgba(37, 99, 235, 0.12) 0%, transparent 60%);
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(37, 99, 235, 0.1);
+    color: #60a5fa;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.hero-wrapper h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-wrapper p {
+    color: #94a3b8;
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto 45px;
+    line-height: 1.6;
+}
+
+/* Booking Panel */
+.booking-panel {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(18, 18, 24, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.panel-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.2fr auto;
+    gap: 16px;
+    align-items: end;
+}
+
+.field-box {
+    text-align: left;
+}
+
+.field-box label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.field-box input {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.field-box input:focus {
+    border-color: #3b82f6;
+}
+
+.search-action-btn {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 0 28px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-action-btn:hover {
+    background: #2563eb;
+}
+
+/* Fleet Section */
+.fleet-section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #94a3b8;
+}
+
+.fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.fleet-card {
+    background: #0f1015;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.fleet-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.card-tag {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.card-tag.gold {
+    background: rgba(234, 179, 8, 0.1);
+    color: #facc15;
+}
+
+.car-visual {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.03);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.fleet-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fleet-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 20px;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.price span {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.card-link {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.card-link:hover {
+    color: #93c5fd;
+}/* --- RESPONSIVE DESIGN PENTRU TELEFOANE --- */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        display: none; /* Ascundem meniul clasic pe telefon pentru un aspect curat */
+    }
+
+    .hero-wrapper {
+        padding: 40px 5%;
+    }
+
+    .hero-wrapper h1 {
+        font-size: 2.2rem; /* Micșorăm titlul să încapă perfect pe ecranul telefonului */
+        letter-spacing: -0.5px;
+    }
+
+    .hero-wrapper p {
+        font-size: 1rem;
+    }
+
+    .panel-grid {
+        grid-template-columns: 1fr; /* Transformăm formularul de rezervare pe o singură coloană verticală */
+        gap: 12px;
+    }
+
+    .search-action-btn {
+        width: 100%;
+    }
+
+    .fleet-section {
+        padding: 40px 5%;
+    }
+}/* --- FOOTER PROFESIONIST --- */
+.site-footer {
+    background: #030305;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 60px 5% 30px;
+    margin-top: 80px;
+    color: #94a3b8;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #3b82f6;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}/* --- BANDA DE BRANDURI PARTENERE --- */
+.brands-section {
+    padding: 40px 5%;
+    background: #08080a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.brands-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #64748b;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.brands-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    opacity: 0.7;
+}
+
+.brand-item {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}

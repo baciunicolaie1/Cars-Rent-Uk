@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — Cars Rent UK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">CARS RENT <span>UK</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="locations.html">Locations</a>
+            <a href="help.html">Help</a>
+        </nav>
+    </header>
+
+    <section class="hero-wrapper" style="padding: 40px 5%;">
+        <h1>Create Your Free Account</h1>
+        <p>Join Cars Rent UK to manage bookings and get exclusive member discounts.</p>
+
+        <div class="booking-panel" style="max-width: 450px; margin: 20px auto; text-align: left;">
+            <div style="display: flex; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <button type="button" onclick="window.location.href='auth.html'" style="flex:1; background:none; border:none; color:#94a3b8; padding:10px; font-weight:600; cursor:pointer;">Sign In</button>
+                <button type="button" style="flex:1; background:none; border:none; color:#fff; padding:10px; font-weight:700; border-bottom:2px solid #3b82f6;">Join Free</button>
+            </div>
+            <form style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="field-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="field-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="name@example.com">
+                </div>
+                <div class="field-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••">
+                </div>
+                <button type="button" onclick="alert('Account created successfully!')" class="search-action-btn" style="width: 100%;">Create Account</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online — Cars Rent UK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">CARS RENT <span>UK</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="locations.html">Locations</a>
+            <a href="help.html">Help</a>
+        </nav>
+    </header>
+
+    <section class="hero-wrapper" style="padding: 40px 5%;">
+        <h1>Complete Your Online Booking</h1>
+        <p>Select your dates and pick-up hub to secure your vehicle instantly.</p>
+
+        <div class="booking-panel" style="max-width: 600px; margin: 20px auto; text-align: left;">
+            <form style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="field-box">
+                    <label>Select Car Category</label>
+                    <input type="text" placeholder="e.g. Executive SUV / Tesla Model Y">
+                </div>
+                <div class="field-box">
+                    <label>Pick-up Location</label>
+                    <input type="text" placeholder="London Heathrow / Manchester">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <div class="field-box">
+                        <label>Pick-up Date</label>
+                        <input type="date">
+                    </div>
+                    <div class="field-box">
+                        <label>Return Date</label>
+                        <input type="date">
+                    </div>
+                </div>
+                <button type="button" onclick="alert('Booking confirmed! Thank you for choosing Cars Rent UK.')" class="search-action-btn" style="width: 100%; margin-top: 10px;">Proceed to Secure Payment</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

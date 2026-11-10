@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS RENT UK — Luxury & Performance Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts pentru un aspect ultra-modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigație Fixă -->
+    <header class="site-header">
+        <div class="logo">CARS RENT <span>UK</span></div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="locations.html">Locations</a>
+            <a href="help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+            <a href="auth.html" class="btn-secondary">Sign In</a>
+            <a href="booking.html" class="btn-primary-glow">Book Online</a>
+        </div>
+    </header>
+
+    <!-- Secțiunea Hero cu Design Modern -->
+    <section class="hero-wrapper">
+        <div class="hero-badge">⚡ UK's Premier EV & Luxury Fleet</div>
+        <h1>Elevate Your Journey Across The UK</h1>
+        <p>Experience seamless vehicle rentals with zero friction, instant confirmation, and delivery straight to your doorstep.</p>
+<!-- Banda de Branduri Partenere -->
+    <div class="brands-section">
+        <div class="brands-title">Featuring Top-Tier Fleet Manufacturers</div>
+        <div class="brands-grid">
+            <div class="brand-item">TESLA</div>
+            <div class="brand-item">RANGE ROVER</div>
+            <div class="brand-item">BMW EXECUTIVE</div>
+            <div class="brand-item">AUDI E-TRON</div>
+            <div class="brand-item">MERCEDES-BENZ</div>
+        </div>
+    </div>
+        <!-- Widget Modern de Rezervare -->
+        <div class="booking-panel">
+            <div class="panel-grid">
+                <div class="field-box">
+                    <label>Pick-up & Drop-off</label>
+                    <input type="text" placeholder="Airport, City, or Postcode">
+                </div>
+                <div class="field-box">
+                    <label>Pick-up Date</label>
+                    <input type="date">
+                </div>
+                <div class="field-box">
+                    <label>Return Date</label>
+                    <input type="date">
+                </div>
+                <button class="search-action-btn" onclick="window.location.href='booking.html'">Find Vehicles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea de Mașini / Prezentare Fleet -->
+    <section class="fleet-section">
+        <div class="section-title">
+            <h2>Featured Categories</h2>
+            <p>Hand-picked vehicles for ultimate comfort and prestige</p>
+        </div>
+
+        <div class="fleet-grid">
+            <div class="fleet-card">
+                <div class="card-tag">Most Popular</div>
+                <div class="car-visual">SUV</div>
+                <h3>Executive SUV</h3>
+                <p>Spacious, powerful, and built for all-weather British terrain.</p>
+                <div class="card-footer">
+                    <span class="price">£75 <span>/ day</span></span>
+                    <a href="contact.html" class="card-link">Reserve &rarr;</a>
+                </div>
+            </div>
+
+            <div class="fleet-card">
+                <div class="card-tag gold">Next-Gen</div>
+                <div class="car-visual">EV</div>
+                <h3>All-Electric Performance</h3>
+                <p>Cutting-edge range, lightning acceleration, zero emissions.</p>
+                <div class="card-footer">
+                    <span class="price">£95 <span>/ day</span></span>
+                    <a href="contact.html" class="card-link">Reserve &rarr;</a>
+                </div>
+            </div>
+
+            <div class="fleet-card">
+                <div class="card-tag">Urban</div>
+                <div class="car-visual">CITY</div>
+                <h3>Compact City</h3>
+                <p>Agile, extremely fuel-efficient, perfect for tight spaces.</p>
+                <div class="card-footer">
+                    <span class="price">£40 <span>/ day</span></span>
+                    <a href="contact.html" class="card-link">Reserve &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea de Recenzii / Testimoniale -->
+    <section class="fleet-section" style="border-top: 1px solid rgba(255,255,255,0.06);">
+        <div class="section-title">
+            <h2>Trusted by Drivers Across the UK</h2>
+            <p>See what our corporate and private clients have to say about our service</p>
+        </div>
+
+        <div class="fleet-grid">
+            <div class="fleet-card">
+                <div style="color: #facc15; margin-bottom: 15px; font-size: 1.1rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 20px;">„The Tesla Model Y was delivered right outside Heathrow Terminal 5 on time. Absolute zero friction. Best rental experience I've had in London.”</p>
+                <h4 style="font-size: 0.95rem; color: #fff;">James S. — London</h4>
+            </div>
+
+            <div class="fleet-card">
+                <div style="color: #facc15; margin-bottom: 15px; font-size: 1.1rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 20px;">„Rented an Executive SUV for a weekend family trip to the Scottish Highlands. Impeccable condition, spotless interior, and great fuel efficiency.”</p>
+                <h4 style="font-size: 0.95rem; color: #fff;">Elena R. — Manchester</h4>
+            </div>
+
+            <div class="fleet-card">
+                <div style="color: #facc15; margin-bottom: 15px; font-size: 1.1rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 20px;">„The booking process took literally 2 minutes. Transparent pricing with zero hidden fees. Highly recommend Cars Rent UK to anyone!”</p>
+                <h4 style="font-size: 0.95rem; color: #fff;">Marcus B. — Edinburgh</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subsol / Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 15px;">CARS RENT <span>UK</span></div>
+                <p style="font-size: 0.9rem; line-height: 1.5;">The UK's leading platform for luxury, EV, and executive vehicle rentals.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="booking.html">Book Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support & Help</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="help.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>UK Support Hub</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 8px;">📞 +44 20 7946 0912</p>
+                <p style="font-size: 0.9rem;">✉️ support@carsrentuk.co.uk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cars Rent UK. All rights reserved.</p>
+            <p>Designed for Modern Mobility</p>
+        </div>
